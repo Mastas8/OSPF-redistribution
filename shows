@@ -190,6 +190,48 @@ Routing Protocol is "ospf 1"
     2.2.2.2              110      00:12:10
     3.3.3.3              110      00:12:09
   Distance: (default is 110)
+  
+  
+  
+  NPM-WAN#show ip eigrp topo
+IP-EIGRP Topology Table for AS 1/ID(172.28.127.62)
+
+Codes: P - Passive, A - Active, U - Update, Q - Query, R - Reply,
+       r - Reply status
+
+P 0.0.0.0/0, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.0.1/32, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.2.1/32, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.4.1/32, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.6.1/32, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.16.0/22, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.32.0/19, 1 successors, FD is 2170112
+         via 172.28.127.61 (2170112/2169856), GigabitEthernet1/0/3
+P 172.28.64.0/22, 1 successors, FD is 130816
+         via 172.28.127.61 (130816/128256), GigabitEthernet1/0/3
+P 172.28.68.0/26, 1 successors, FD is 28416
+         via 172.28.127.61 (28416/28160), GigabitEthernet1/0/3
+P 172.28.127.0/30, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.127.4/30, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.127.16/30, 1 successors, FD is 1683456
+         via Redistributed (1683456/0)
+P 172.28.127.32/30, 1 successors, FD is 2170112
+         via 172.28.127.61 (2170112/2169856), GigabitEthernet1/0/3
+P 172.28.127.36/30, 1 successors, FD is 2682112
+         via 172.28.127.61 (2682112/2681856), GigabitEthernet1/0/3
+P 172.28.127.56/30, 1 successors, FD is 2682112
+         via 172.28.127.61 (2682112/2681856), GigabitEthernet1/0/3
+P 172.28.127.60/30, 1 successors, FD is 2816
+         via Connected, GigabitEthernet1/0/3
+
 
 
 _________________________________________________________________________________________________________________________________________
