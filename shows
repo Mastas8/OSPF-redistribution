@@ -1,0 +1,150 @@
+NPM-HQ#show ip route ospf
+     172.28.0.0/16 is variably subnetted, 25 subnets, 6 masks
+O       172.28.4.1 [110/2] via 172.28.127.2, 01:16:14, GigabitEthernet0/0/0
+O       172.28.6.1 [110/2] via 172.28.127.2, 01:16:14, GigabitEthernet0/0/0
+O       172.28.16.1 [110/65] via 172.28.127.6, 01:16:43, Serial0/1/1
+O       172.28.18.1 [110/65] via 172.28.127.6, 01:16:43, Serial0/1/1
+O E2    172.28.32.0 [110/20] via 172.28.127.18, 01:16:14, GigabitEthernet0/0/1
+O E2    172.28.64.0 [110/20] via 172.28.127.18, 01:16:14, GigabitEthernet0/0/1
+O E2    172.28.68.0 [110/20] via 172.28.127.18, 01:16:14, GigabitEthernet0/0/1
+O E2    172.28.127.32 [110/20] via 172.28.127.18, 01:16:14, GigabitEthernet0/0/1
+O E2    172.28.127.36 [110/20] via 172.28.127.18, 01:16:14, GigabitEthernet0/0/1
+O E2    172.28.127.56 [110/20] via 172.28.127.18, 01:16:14, GigabitEthernet0/0/1
+O E2    172.28.127.60 [110/20] via 172.28.127.18, 01:16:14, GigabitEthernet0/0/1
+
+
+
+
+NPM-HQ#show ip ospf database external
+
+            OSPF Router with ID (3.3.3.3) (Process ID 1)
+
+                Type-5 AS External Link States
+
+  Routing Bit Set on this LSA
+  LS age: 1042
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 0.0.0.0 (External Network Number )
+  Advertising Router: 3.3.3.3
+  LS Seq Number: 80000003
+  Checksum: 0xbe06
+  Length: 36
+  Network Mask: /0
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 1
+        Forward Address: 0.0.0.0
+        External Route Tag: 1
+
+  Routing Bit Set on this LSA
+  LS age: 1049
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 172.28.127.60 (External Network Number )
+  Advertising Router: 1.1.1.1
+  LS Seq Number: 80000003
+  Checksum: 0xaa8e
+  Length: 36
+  Network Mask: /30
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 20
+        Forward Address: 0.0.0.0
+        External Route Tag: 0
+
+  Routing Bit Set on this LSA
+  LS age: 1048
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 172.28.64.0 (External Network Number )
+  Advertising Router: 1.1.1.1
+  LS Seq Number: 80000003
+  Checksum: 0xbff4
+  Length: 36
+  Network Mask: /22
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 20
+        Forward Address: 0.0.0.0
+        External Route Tag: 0
+
+  Routing Bit Set on this LSA
+  LS age: 1048
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 172.28.68.0 (External Network Number )
+  Advertising Router: 1.1.1.1
+  LS Seq Number: 80000003
+  Checksum: 0x27c5
+  Length: 36
+  Network Mask: /26
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 20
+        Forward Address: 0.0.0.0
+        External Route Tag: 0
+
+  Routing Bit Set on this LSA
+  LS age: 1048
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 172.28.127.32 (External Network Number )
+  Advertising Router: 1.1.1.1
+  LS Seq Number: 80000003
+  Checksum: 0xc391
+  Length: 36
+  Network Mask: /30
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 20
+        Forward Address: 0.0.0.0
+        External Route Tag: 0
+
+  Routing Bit Set on this LSA
+  LS age: 1044
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 172.28.32.0 (External Network Number )
+  Advertising Router: 1.1.1.1
+  LS Seq Number: 80000003
+  Checksum: 0x945c
+  Length: 36
+  Network Mask: /19
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 20
+        Forward Address: 0.0.0.0
+        External Route Tag: 0
+
+  Routing Bit Set on this LSA
+  LS age: 1044
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 172.28.127.56 (External Network Number )
+  Advertising Router: 1.1.1.1
+  LS Seq Number: 80000003
+  Checksum: 0xd26a
+  Length: 36
+  Network Mask: /30
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 20
+        Forward Address: 0.0.0.0
+        External Route Tag: 0
+
+  Routing Bit Set on this LSA
+  LS age: 1043
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 172.28.127.36 (External Network Number )
+  Advertising Router: 1.1.1.1
+  LS Seq Number: 80000003
+  Checksum: 0x9bb5
+  Length: 36
+  Network Mask: /30
+        Metric Type: 2 (Larger than any link state path)
+        TOS: 0
+        Metric: 20
+        Forward Address: 0.0.0.0
+        External Route Tag: 0
